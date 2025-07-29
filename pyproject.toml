@@ -215,6 +215,7 @@ requirements-txt = [
     "duckduckgo_search",
     "exa_py",
     "firecrawl",
+    "crawl4ai",
     "langchain-anthropic",
     "langchain-cohere",
     "langchain-dashscope",

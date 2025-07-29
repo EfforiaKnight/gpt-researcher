@@ -18,6 +18,7 @@ from . import (
     NoDriverScraper,
     TavilyExtract,
     FireCrawl,
+    Crawl4aiScraper,
 )
 
 
@@ -168,7 +169,7 @@ class Scraper:
         """
 
         SCRAPER_CLASSES = {
-            "pdf": PyMuPDFScraper,
+            "pdf": Crawl4aiScraper,
             "arxiv": ArxivScraper,
             "bs": BeautifulSoupScraper,
             "web_base_loader": WebBaseLoaderScraper,
@@ -176,6 +177,7 @@ class Scraper:
             "nodriver": NoDriverScraper,
             "tavily_extract": TavilyExtract,
             "firecrawl": FireCrawl,
+            "crawl4ai": Crawl4aiScraper,
         }
 
         scraper_key = None
