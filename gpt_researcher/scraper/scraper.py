@@ -169,7 +169,7 @@ class Scraper:
         """
 
         SCRAPER_CLASSES = {
-            "pdf": Crawl4aiScraper,
+            "pdf": PyMuPDFScraper,
             "arxiv": ArxivScraper,
             "bs": BeautifulSoupScraper,
             "web_base_loader": WebBaseLoaderScraper,
@@ -182,7 +182,7 @@ class Scraper:
 
         scraper_key = None
 
-        if link.endswith(".pdf"):
+        if link.lower().endswith(".pdf"):
             scraper_key = "pdf"
         elif "arxiv.org" in link:
             scraper_key = "arxiv"
